@@ -1,0 +1,35 @@
+#nf-error {
+    padding-block: 5rem;
+}
+
+.nf-error {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    &__figure {
+        display: flex;
+        align-items: center;
+
+        flex: 0 1 250px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__text {
+        flex: 1;
+
+        h2 {
+            font-size: clamp(1.25rem, 1rem + 3vw, 2rem);
+        }
+
+        @include mobile {
+            text-align: center;
+        }
+    }
+}

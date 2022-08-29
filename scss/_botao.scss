@@ -1,0 +1,68 @@
+.botao {
+    display: inline-block;
+    padding: .5rem .9rem;
+    border-radius: 3px;
+    font-size: .9rem;
+    transition: background-color .2s;
+    border: none;
+    cursor: pointer;
+
+    &:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+    &__primario {
+        background-color: $cor_brand_b;
+        color: $cor_background_a;
+
+        &:hover {
+            background-color: lighten($cor_brand_b, 10);
+            color: #fff;
+        }
+    }
+
+    &__primario--outline {
+        border: 1px solid $cor_brand_a;
+        background-color: transparent;
+        color: $cor_brand_a;
+
+        &:hover {
+            background-color: $cor_brand_a;
+            color: $cor_background_a;
+        }
+    }
+
+    &__secundario {
+        background-color: $cor_brand_a;
+        color: $cor_background_a;
+
+        &:hover {
+            background-color: lighten($cor_brand_a, 10);
+            color: #fff;
+        }
+    }
+
+    &__outline {
+        border: 1px solid $cor_background_a;
+        background-color: transparent;
+        color: $cor_background_a;
+
+        &:hover {
+            background-color: $cor_background_a;
+            color: $cor_brand_a;
+        }
+    }
+}
+
+.botao-grupo {
+    .botao:not(:last-child) {
+        margin-bottom: .5rem;
+    }
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+
+    @include mobile {
+        margin-inline: auto;
+    }
+}

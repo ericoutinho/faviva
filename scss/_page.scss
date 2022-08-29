@@ -1,0 +1,62 @@
+.page {
+
+    &__figure {
+        width: 100%;
+        height: 250px;
+        margin-bottom: 2rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    h2 {
+        font-size: clamp(1.5rem, 1.5*3vw, 2rem);
+
+        small,a {
+            display: block;
+            color: $cor_brand_b;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: .9rem;
+        }
+    }
+
+    &__share {
+        display: flex;
+        align-items: center;
+        gap: .75rem;
+        margin-bottom: 2rem;
+
+        a {
+            font-size: 1.05rem;
+            color: #999;
+            transition: color .2s;
+
+            &:is(:hover, :active) {
+                color: $cor_brand_b;
+            }
+        }
+    }
+
+    &__summary {
+        background-color: #fff;
+        padding: 2rem;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+
+        i {
+            color: $cor_brand_b;
+        }
+
+        li:not(:last-child) {
+            margin-bottom: .5rem;
+        }
+    }
+
+    &__tags {
+        margin-block: 3rem 1rem;
+    }
+}

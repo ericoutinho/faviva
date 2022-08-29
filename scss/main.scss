@@ -1,0 +1,139 @@
+@charset "utf8";
+
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed&family=Montserrat:wght@400;600;700&display=swap');
+
+// Variáveis
+
+$cor_brand_a: #0B3B4B;
+$cor_brand_b: #1E8BB0;
+
+$cor_background_a: #F3F3FF;
+$cor_background_b: #E4E7ED;
+
+$cor_texto: #333;
+
+
+@mixin mobile {
+    @media screen and (max-width: 460px) {
+        @content;
+    }
+}
+
+
+// Includes
+@import "botao";
+@import "header";
+@import "hero";
+@import "graduacao";
+@import "vestibular";
+@import "posgraduacao";
+@import "blog";
+@import "contato";
+@import "footer";
+@import "mapa";
+
+@import "404";
+@import "page";
+@import "page-contato";
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    // border: thin solid red;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: $cor_background_a;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: $cor_texto;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+strong {
+    font-weight: 600;
+}
+
+p {
+    line-height: 145%;
+}
+
+p:not(:last-child) {
+    margin-bottom: 1.5rem;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 100%;
+    margin-bottom: 1.5rem;
+
+    i {
+        color: $cor_brand_b;
+    }
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.container {
+    margin-inline: auto;
+    width: 90vw;
+    max-width: 900px;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    flex: 1;
+}
+
+section {
+    padding-block: 2.5rem;
+}
+
+
+.banner {
+    margin-bottom: 0 !important;
+    a {
+        border: 1px solid #dedede;
+        display: block;
+        width: min(90vw, 600px);
+        margin-inline: auto;
+
+        img {
+            width: 100%;
+        }
+    }
+}

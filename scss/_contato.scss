@@ -1,0 +1,54 @@
+#contato {
+    background: $cor_background_b;
+
+    .row {
+        flex-wrap: wrap;
+
+        @include mobile {
+            gap: 3rem;
+        }
+    }
+
+    .col {
+        flex: 1 0 400px;
+    }
+}
+
+.saiba-mais {
+    & > li:not(:last-child) {
+        margin-bottom: .75rem;
+    }
+
+    i {
+        color: $cor_brand_b;
+    }
+}
+
+.contatos {
+    & > li {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+    }
+
+    & > li:not(:last-child) {
+        margin-bottom: .75rem;
+    }
+
+    &__fone {
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+
+    &__social {
+        margin-top: 1rem;
+        display: flex;
+        gap: .5rem;
+        font-size: 2rem;
+
+        @include mobile {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+}

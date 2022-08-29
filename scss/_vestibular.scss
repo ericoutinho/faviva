@@ -1,0 +1,42 @@
+#vestibular {
+    background: linear-gradient(to right, $cor_brand_a, transparent, $cor_brand_a), url(../assets/faviva-vestibular-background.jpg) $cor_brand_b;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin-top: 3rem;
+}
+
+.vestibular {
+    display: flex;
+
+    figure {
+        flex: 1.5;
+        img {
+            height: 300px;
+            width: auto;
+            margin-top: -3rem;
+        }
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    &__texto {
+        flex: 2;
+        align-self: center;
+        padding-block: 2rem;
+        color: $cor_background_a;
+
+        @include mobile {
+            text-align: center;
+        }
+
+        h2 {
+            font-size: clamp(1.25rem, 1rem + 3vw, 2rem);
+            margin-bottom: 1rem;
+        }
+
+    }
+}
+

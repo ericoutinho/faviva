@@ -1,0 +1,58 @@
+#graduacao {}
+
+.cursos {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.curso {
+    display: flex;
+    background: #fff;
+    flex-wrap: wrap;
+
+    &:nth-child(even) {
+        flex-wrap: wrap-reverse;
+    }
+
+    &__figure {
+        flex: 1 0 250px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__texto {
+        flex: 2;
+        padding: 1.5rem;
+
+        h3 {
+            margin-bottom: .75rem;
+            color: $cor_brand_b;
+
+            small {
+                display: block;
+                font-size: .85rem;
+                font-weight: 400;
+                text-transform: uppercase;
+                color: $cor_texto;
+            }
+        }
+
+        ul {
+            margin-bottom: 1rem;
+            font-size: .9rem;
+        }
+
+        li {
+            line-height: 170%;
+
+            i {
+                color: $cor_brand_b;
+            }
+        }
+    }
+}

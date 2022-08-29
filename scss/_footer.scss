@@ -1,0 +1,12 @@
+footer {
+    padding-block: .5rem 1rem;
+    background-color: $cor_brand_a;
+    color: $cor_background_a;
+    font-size: .85rem;
+
+    .container {
+        @include mobile {
+            text-align: center;
+        }
+    }
+}

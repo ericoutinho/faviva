@@ -1,0 +1,68 @@
+#page-contato {
+
+    .contato-row {
+        display: flex;
+        gap: 2rem;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .contato-col-form {
+        flex: 1 0 400px;
+    }
+
+    .contato-col-info {
+        flex: 1 0 400px;
+        position: sticky;
+        top: 0;
+    }
+
+    form {
+
+        background: #fff;
+        padding: 1.75rem;
+        border-radius: 10px;
+
+        li {
+            padding-bottom: .75rem;
+        }
+    
+        label {
+            display: block;
+            margin-bottom: .25rem;
+            font-size: .9rem;
+        }
+    
+        input, textarea {
+            outline: 0;
+            font-family: "Montserrat", sans-serif;
+            display: block;
+            width: 100%;
+            border: 1px solid #ccc;
+            background: #fff;
+            padding: .5rem .75rem;
+            border-radius: 4px;
+    
+            &:focus {
+                outline: 3px solid rgba($cor_brand_a, .3)
+            }
+        }
+
+        small {
+            display: none;
+        }
+
+        button {
+            margin-block: 1rem 0;
+        }
+    }
+
+    .error {
+        border: 1px solid rgb(252, 133, 157);
+        background: rgb(250, 216, 223);
+
+        &+small {
+            display: block;
+        }
+    }
+}
