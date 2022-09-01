@@ -1,0 +1,69 @@
+#page-blog {
+
+    .blog-card {
+        display: flex;
+        margin-bottom: 1.5rem;
+        background: lighten(#F3F3FF, 1.5%);
+        border-radius: 5px;
+        overflow: hidden;
+        position: relative;
+        transition: background .2s;
+
+        &:hover {
+            background: #fff;
+        }
+
+        &:hover img {
+            filter: brightness(1);
+        }
+
+        &__figure {
+            flex: 0 1 200px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                filter: brightness(.75);
+                transition: filter .2s;
+            }
+        }
+
+        &__text {
+            flex: 1;
+            padding: .75rem 1.5rem;
+
+            small {
+                display: block;
+                color: $cor_brand_b;
+                text-transform: uppercase;
+            }
+
+            h3 {
+                font-size: clamp(1.1rem, 1.25rem + 3vw, 1.5rem);
+                margin-bottom: .5rem;
+            }
+
+            p {
+                margin-block: 0 .75rem;
+                line-height: 120%;
+                max-width: 48ch;
+            }
+
+            span {
+                font-size: .75rem;
+                text-transform: uppercase;
+                color: #BBB;
+            }
+
+        }
+
+        &__link {
+            display: block;
+            position: absolute;
+            left: 0; top: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

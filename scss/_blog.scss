@@ -5,8 +5,20 @@
 }
 
 .artigo {
+    position: relative;
     flex: 1 0 250px;
-    background: #fff;
+    background: lighten(#F3F3FF, 1.5%);
+    transition: background .2s;
+    border-radius: 5px;
+    overflow: hidden;
+
+    &:is(:hover, :active) {
+        background: #fff;
+
+        img {
+            filter: brightness(1);
+        }
+    }
 
     &__figure {
         height: 150px;
@@ -15,11 +27,19 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            filter: brightness(.75);
+            transition: filter .2s;
         }
     }
 
     &__texto {
         padding: 1rem;
+
+        small {
+            font-size: .75rem;
+            text-transform: uppercase;
+            color: $cor_brand_b;
+        }
 
         h3 {
             font-size: 1.1rem;
@@ -31,6 +51,13 @@
             line-height: 135%;
             margin-bottom: .75rem !important;
         }
+
+    }
+
+    &__link {
+        display: block;
+        position: absolute;
+        inset: 0;
     }
 }
 

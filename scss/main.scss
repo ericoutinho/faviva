@@ -24,6 +24,7 @@ $cor_texto: #333;
 @import "botao";
 @import "header";
 @import "hero";
+@import "sobre";
 @import "graduacao";
 @import "vestibular";
 @import "posgraduacao";
@@ -35,6 +36,10 @@ $cor_texto: #333;
 @import "404";
 @import "page";
 @import "page-contato";
+@import "page-blog";
+
+@import "components/modal-lgpd";
+@import "components/modal-whatsapp";
 
 
 * {

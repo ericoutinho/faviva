@@ -48,6 +48,8 @@
     <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/styles/main.min.css?v=<?=wp_get_theme()->get('Version')?>">
 
     <script src="<?= get_template_directory_uri(); ?>/scripts/main.js" defer></script>
+    <script src="<?= get_template_directory_uri(); ?>/scripts/modal-lgpd.js" defer></script>
+    <script src="<?= get_template_directory_uri(); ?>/scripts/modal-whatsapp.js" defer></script>
 
     <?php wp_head(); ?>
 </head>
@@ -82,7 +84,7 @@
                         </ul>
                     </li>
 
-                    <li><a href="<?=home_url("vestibular")?>">Vestibular</a></li>
+                    <li><a target="_blank" href="https://vest.faviva.com.br">Vestibular</a></li>
                     <li><a href="<?=home_url("contato")?>">Contato</a></li>
                     <li><a href="<?=home_url("blog")?>">Blog</a></li>
 

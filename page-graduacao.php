@@ -18,7 +18,7 @@
     <section id="graduacao">
         <div class="container">
             <h2><i class="fa-solid fa-caret-right"></i> Graduação</h2>
-            <p>Todos os nossos <strong>cursos são reconhecidos pelo MEC</strong> e contamos com um corpo docente formado em sua maioria por mestres e doutores, além infraestrutura adequada, possibilitando o máximo aproveitamento por nossos alunos.</p>
+            <p><strong>Todos os nossos cursos são reconhecidos pelo MEC</strong> e contamos com um corpo docente qualificado e experiente, formado em sua maioria por mestres e doutores, além infraestrutura adequada e acessível, possibilitando o máximo aproveitamento por nossos alunos.</p>
 
             <div class="cursos">
 

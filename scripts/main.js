@@ -4,7 +4,6 @@
 //     }
 // }
 
-
 const toggle = document.querySelector(".menu__toggle");
 const menu = document.querySelector(".menu__links");
 toggle.addEventListener("click", () => {

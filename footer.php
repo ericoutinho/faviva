@@ -18,7 +18,7 @@
                     $args = array(
                         'post_type' => array('post'),
                         'post_status' => array('publish'),
-                        'posts_per_page'  => '5',
+                        'posts_per_page'  => '3',
                         'order' => 'DESC',
                         'orderby' => 'date',
                         'tax_query' => array(
@@ -56,9 +56,10 @@
                                 <img src="<?= the_post_thumbnail_url() ?>" alt="">
                             </figure>
                             <div class="artigo__texto">
+                                <small><?= the_category('&bull;') ?></small>
                                 <h3><?= the_title() ?></h3>
                                 <p><?= the_excerpt() ?></p>
-                                <a class="botao botao__secundario" href="<?= the_permalink() ?>">Saiba mais <i class="fa-solid fa-chevron-right"></i></a>
+                                <a class="artigo__link" href="<?= the_permalink() ?>"></a>
                             </div>
                         </div>
                 <?php endwhile; ?>
@@ -83,7 +84,7 @@
                             <a href="#" class="botao botao__primario"><i class="fa-solid fa-circle-user"></i> Área do aluno</a>
                             <ul class="saiba-mais">
                                 <li><a href="<?=home_url("graduacao")?>"><i class="fa-solid fa-caret-right fa-fw"></i> Graduação</a></li>
-                                <li><a href="<?=home_url("vestibular")?>"><i class="fa-solid fa-caret-right fa-fw"></i> Vestibular</a></li>
+                                <li><a title="Faça a sua inscrição!" target="_blank" href="https://vest.faviva.com.br"><i class="fa-solid fa-caret-right fa-fw"></i> Vestibular</a></li>
                                 <li><a href="<?=home_url("sobre")?>"><i class="fa-solid fa-caret-right fa-fw"></i> Sobre a FAVIVA</a></li>
                                 <li><a href="<?=home_url("contato")?>"><i class="fa-solid fa-caret-right fa-fw"></i> Contato</a></li>
                                 <li><a href="<?=home_url("blog")?>"><i class="fa-solid fa-caret-right fa-fw"></i> Blog</a></li>
@@ -125,6 +126,36 @@
         </footer>
 
     <?php wp_footer(); ?>
+
+
+    <div class="modal-lgpd">
+        <div class="modal-lgpd__texto">
+        <strong>A FAVIVA e os cookies</strong>: utilizamos cookies para personalizar anúncios e melhorar a sua experiência no nosso site. Ao continuar navegando, você concorda com a nossa <a href="">Política de Privacidade</a> e <a href="">Política de Cookies</a>.
+        </div>
+        <button class="botao botao__primario"><i class="fa-solid fa-xmark"></i> Aceitar e fechar</button>
+    </div>
+
+    <div class="modal-whatsapp">
+        <div class="modal-whatsapp__wrapper">
+            <button title="Fechar widget do Whastsapp" class="modal-whatsapp__close"><i class="fa-solid fa-xmark"></i></button>
+            <h4><i class="fa-solid fa-caret-right"></i> Fale conosco agora!</h4>
+            <p>Utilize um de nossos canais pelo Whatsapp para tirar as suas dúvidas.</p>
+            <ul>
+                <li>
+                    <a title="Atendimento ao Cliente FAVIVA" target="_blank" href="https://wa.me/5527999280910">
+                        <img src="<?= get_template_directory_uri() ?>/assets/faviva-whatsapp-profile-a.webp" alt="">
+                        <span>
+                            Atendimento ao cliente
+                            <small>Clique para iniciar a conversa</small>
+                        </span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <button class="modal-whatsapp__button" title="Chame-nos no Whatsapp" aria-label="button"><i class="fab fa-whatsapp"></i></button>
+    </div>
+    
 
     </body>
 </html>
