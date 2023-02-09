@@ -24,11 +24,11 @@
                     <p>Conquiste sua graduação e se torne um profissional desejado pelo mercado <strong>com mensalidades que cabem no seu bolso</strong>.</p>
                     <div class="botao-grupo">
                         <a href="#graduacao" class="botao botao__outline"><i class="fa-solid fa-magnifying-glass"></i> Conhecer os nossos cursos</a>
-                        <a href="<?=home_url("vestibular")?>" class="botao botao__primario"><i class="fa-solid fa-pencil"></i> Fazer minha inscrição agora!</a>
+                        <a target="_blank" href="https://faviva.pincelatomico.net.br/externos/nova_matricula/matricula.php" class="botao botao__primario"><i class="fa-solid fa-pencil"></i> Fazer minha inscrição agora!</a>
                     </div>
                 </div>
-                <figure class="hero__figure">
-                    <img src="<?= get_template_directory_uri() ?>/assets/faviva-hero.webp">
+                <figure class="hero__figure" style="margin-bottom:0;">
+                    <img src="<?= get_template_directory_uri() ?>/assets/faviva-hero.webp" alt="Aluno homem de mochila e cadernos empolgado">
                 </figure>
             </div>
         </div>
@@ -37,8 +37,8 @@
     <section id="sobre">
         <div class="container">
             <div class="sobre-wrapper">
-                <figure class="sobre-wrapper__figure">
-                    <img src="<?= get_template_directory_uri() ?>/assets/faviva-quem-somos.webp" alt="">
+                <figure class="sobre-wrapper__figure" style="margin-bottom:0;">
+                    <img src="<?= get_template_directory_uri() ?>/assets/faviva-quem-somos.webp" alt="Estudante homem sorrindo utilizando caderno">
                 </figure>
                 <div class="sobre-wrapper__texto">
                     <h2>Bem-vindo(a) a FAVIVA!</h2>
@@ -86,8 +86,8 @@
             <div class="cursos">
 
                 <div class="curso">
-                    <figure class="curso__figure">
-                        <img src="<?= get_template_directory_uri(); ?>/assets/faviva-direito.webp">
+                    <figure class="curso__figure" style="margin-bottom:0;">
+                        <img src="<?= get_template_directory_uri(); ?>/assets/faviva-direito.webp" alt="Advogada lendo com estátua da justiça a sua frente">
                     </figure>
                     <div class="curso__texto">
                         <h3><small>Graduação em</small>Direito</h3>
@@ -112,14 +112,14 @@
                         </ul>
                         <a href="<?=home_url("graduacao/arquitetura-e-urbanismo")?>" class="botao botao__primario"><i class="fas fa-plus"></i> Mais informações</a>
                     </div>
-                    <figure class="curso__figure">
-                        <img src="<?= get_template_directory_uri(); ?>/assets/faviva-arquitetura.webp">
+                    <figure class="curso__figure" style="margin-bottom:0;">
+                        <img src="<?= get_template_directory_uri(); ?>/assets/faviva-arquitetura.webp" alt="Mulher arquiteta sorrindo">
                     </figure>
                 </div>
 
                 <div class="curso">
-                    <figure class="curso__figure">
-                        <img src="<?= get_template_directory_uri(); ?>/assets/faviva-contabilidade.webp">
+                    <figure class="curso__figure" style="margin-bottom:0;">
+                        <img src="<?= get_template_directory_uri(); ?>/assets/faviva-contabilidade.webp" alt="Mulher contadora analisando dados no PC">
                     </figure>
                     <div class="curso__texto">
                         <h3><small>Graduação em</small>Ciência Contábeis</h3>
@@ -139,13 +139,13 @@
     <section id="vestibular">
         <div class="container">
             <div class="vestibular">
-                <figure>
-                    <img src="<?= get_template_directory_uri(); ?>/assets/faviva-vestibular.png" alt="">
+                <figure style="margin-bottom:0;">
+                    <img src="<?= get_template_directory_uri(); ?>/assets/faviva-vestibular.png" alt="Alunos usando um laptop">
                 </figure>
                 <div class="vestibular__texto">
-                    <h2>Vestibular FAVIVA 2022/2</h2>
-                    <p><strong>Não perca mais tempo</strong>! As matrículas já estão abertas e as vagas são limitadas. <strong>Garanta logo a sua vaga!</strong></p>
-                    <a class="botao botao__secundario" title="Faça a sua inscrição!" target="_blank" href="https://vest.faviva.com.br">Comece o seu sonho agora! <i class="fa-solid fa-arrow-right-long"></i></a>
+                    <h2>Faça já sua matrícula!</h2>
+                    <p><strong>Não perca mais tempo</strong>! As matrículas estão abertas e as vagas são limitadas. <strong>Garanta logo a sua!</strong></p>
+                    <a class="botao botao__secundario" title="Faça a sua inscrição!" target="_blank" href="https://faviva.pincelatomico.net.br/externos/nova_matricula/matricula.php">Comece o seu sonho agora! <i class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
             </div>
         </div>

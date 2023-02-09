@@ -86,9 +86,10 @@
                         <li><strong>Faculdade VIVA Vitória Ltda.</strong></li>
                         <!-- <li><strong>CNPJ</strong>: 00.000.000/0001-00</li> -->
                         <li><strong>Mantenedora</strong>: Instituto VIVA Vitória</li>
-                        <li><i class="fa-solid fa-location-pin fa-fw"></i>Av. Fernando Ferrari, 1.094, Mata da Praia<br/>Vitória - ES • CEP: 29066-380</li>
-                        <li><i class="fa-solid fa-envelope-open fa-fw"></i><a href="mailto:contato@faviva.com.br">contato@faviva.com.br</a></li>
-                        <li><i class="fa-solid fa-phone-flip fa-fw"></i><a class="contatos__fone" href="tel:+5527999280910">(27) 99928-0910</a></li>
+                        <li><i class="fa-solid fa-location-pin fa-fw"></i>Rua Almerinda Corina da Silva, 10, Jardim Camburi<br/>Vitória - ES • CEP: 29090-550</li>
+                        <li><i class="fa-solid fa-envelope-open fa-fw"></i><a href="mailto:contato@faviva.com.br" target="_blank">contato@faviva.com.br</a></li>
+                        <li><i class="fa-solid fa-phone-flip fa-fw"></i><a class="contatos__fone" href="tel:+5527999280910" target="_blank">(27) 99928-0910</a></li>
+                        <li><i class="fa-solid fa-phone-flip fa-fw"></i><a class="contatos__fone" href="tel:+5508006969999" target="_blank">0800 696 9999</a></li>
                         <li>
                             <ul class="contatos__social">
                                 <li><a title="Siga-nos no Instagram" target="_blank" href="https://www.instagram.com/faviva.es"><i class="fab fa-instagram"></i></a></li>

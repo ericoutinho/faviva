@@ -37,7 +37,8 @@
     <meta property="twitter:description" content="<?php bloginfo("description") ?>">
     <meta property="twitter:image" content="<?= get_template_directory_uri() ?>/assets/faviva-meta-imagem.webp">
 
-    
+    <!-- Theme color mobile -->
+    <meta name="theme-color" content="#1E8BB0">
 
     <link rel="apple-touch-icon" sizes="180x180" href="<?= get_template_directory_uri(); ?>/assets">
     <link rel="icon" type="image/png" sizes="32x32" href="<?= get_template_directory_uri(); ?>/assets/favicon-32x32.png">
@@ -71,9 +72,16 @@
 
                 <!-- Menu links -->
                 <ul class="menu__links">
-                    <!-- <li><a href="/">Início</a></li> -->
-                    <li><a href="<?=home_url("sobre")?>">Sobre</a></li>
-                    <!-- <li><a href="<?=home_url("graduacao")?>">Graduação</a></li> -->
+                    <!-- <li><a href="<?=home_url("sobre")?>">Sobre</a></li> -->
+
+                    <li class="menu__dropdown">
+                        <span>Sobre <i class="fas fa-caret-down"></i></span>
+                        <ul>
+                            <li><a href="<?=home_url("sobre")?>">A FAVIVA</a></li>
+                            <li><a href="<?=home_url("cadastro-no-e-mec")?>">Cadastro no e-MEC</a></li>
+                            <li><a href="<?=home_url("como-chegar-na-faviva")?>">Como chegar até aqui</a></li>
+                        </ul>
+                    </li>
 
                     <li class="menu__dropdown">
                         <span>Graduação <i class="fas fa-caret-down"></i></span>
@@ -84,17 +92,18 @@
                         </ul>
                     </li>
 
-                    <li><a target="_blank" href="https://vest.faviva.com.br">Vestibular</a></li>
+                    <li><a target="_blank" href="https://faviva.pincelatomico.net.br/externos/nova_matricula/matricula.php">Matrículas</a></li>
                     <li><a href="<?=home_url("contato")?>">Contato</a></li>
                     <li><a href="<?=home_url("blog")?>">Blog</a></li>
+                    <li><a href="https://faviva.pincelatomico.net.br/" target="_blank" class="botao botao__primario"><i class="fa-solid fa-circle-user"></i> Área do aluno</a></li>
 
-                    <!-- Social icons -->
+                    <!-- Social icons
                     <ul class="menu__social">
                         <li><a title="Siga-nos no Instagram" target="_blank" href="https://instagram.com/faviva.es"><i class="fab fa-instagram"></i></a></li>
                         <li><a title="Siga-nos no Facebook" target="_blank" href="https://facebook.com"><i class="fab fa-facebook-square"></i></a></li>
                         <li><a title="Siga-nos no Linkedin" target="_blank" href="https://www.linkedin.com/company/faviva"><i class="fab fa-linkedin"></i></a></li>
                         <li><a title="Fale conosco pelo Whatsapp" target="_blank" href="https://wa.me/5527999280910"><i class="fab fa-whatsapp"></i></a></li>
-                    </ul>
+                    </ul> -->
                 </ul>
             </div>
         </nav>

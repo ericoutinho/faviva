@@ -2,6 +2,7 @@
     background: $cor_background_b;
 
     .row {
+        gap: 3rem;
         flex-wrap: wrap;
 
         @include mobile {
@@ -10,13 +11,32 @@
     }
 
     .col {
-        flex: 1 0 400px;
+        flex: 1 0 300px;
+    }
+
+    .col.separator {
+        flex: 0 0 1px;
+        background-color: $cor_brand_b;
+
+        @include mobile {
+            flex: 0 0 100%;
+            height: 1px;
+        }
     }
 }
 
 .saiba-mais {
     & > li:not(:last-child) {
         margin-bottom: .75rem;
+    }
+
+    a {
+        font-weight: 500;
+        transition: all .2s;
+
+        &:is(:hover, :active) {
+            color: $cor_brand_b;
+        }
     }
 
     i {
