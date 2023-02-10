@@ -14,7 +14,7 @@
     get_header();
 ?>
 
-    <h1 hidden>FAVIVA</h1>
+    <h1 hidden>FAVIVA - Faculdade Viva de Vitória</h1>
 
     <section id="hero">
         <div class="container">

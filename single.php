@@ -25,7 +25,7 @@
             ?>
 
             <figure class="page__figure">
-                <img src="<?= the_post_thumbnail_url() ?>" alt="">
+                <img src="<?= the_post_thumbnail_url() ?>" alt="Imagem de capa da notícia">
             </figure>
 
             <h2>

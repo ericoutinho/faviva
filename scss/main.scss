@@ -21,7 +21,6 @@ $cor_texto: #333;
 
 
 // Includes
-@import "botao";
 @import "header";
 @import "hero";
 @import "sobre";
@@ -37,6 +36,8 @@ $cor_texto: #333;
 @import "page";
 @import "page-contato";
 @import "page-blog";
+
+@import "botao";
 
 @import "components/modal-lgpd";
 @import "components/modal-whatsapp";
@@ -69,10 +70,6 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
-}
-
-figure {
-    margin-bottom: 0 !important;
 }
 
 ul {

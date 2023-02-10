@@ -26,7 +26,7 @@
 
             <?php if (has_post_thumbnail()) : ?>
             <figure class="page__figure">
-                <img src="<?= the_post_thumbnail_url() ?>" alt="">
+                <img src="<?= the_post_thumbnail_url() ?>" alt="Imagem de capa da página">
             </figure>
             <?php endif; ?>
 
@@ -71,7 +71,7 @@
                 <li><i class="fa-solid fa-fw fa-graduation-cap"></i> <strong>Formação</strong>: <?=get_post_meta(get_the_ID(), "formacao", true) ?></li>
             </ul>
 
-            <a href="<?php echo home_url("vestibular"); ?>" class="botao botao__primario"><i class="fa-solid fa-pencil"></i> Quero fazer minha matrícula!</a>
+            <a href="https://faviva.pincelatomico.net.br/externos/nova_matricula/matricula.php" target="_blank" class="botao botao__primario"><i class="fa-solid fa-pencil"></i> Quero fazer minha matrícula!</a>
             <a href="<?php echo home_url("graduacao"); ?>" class="botao botao__primario--outline"><i class="fas fa-search"></i> Conhecer outros cursos</a>
             
             <?php endif; ?>
