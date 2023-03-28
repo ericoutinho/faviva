@@ -34,7 +34,7 @@
                             <li><i class="fa-solid fa-chalkboard fa-fw"></i> <strong>Modalidade</strong>: Presencial</li>
                             <li><i class="fa-solid fa-graduation-cap fa-fw"></i> <strong>Formação</strong>: Bacharelado</li>
                         </ul>
-                        <a href="#" class="botao botao__primario"><i class="fas fa-plus"></i> Mais informações</a>
+                        <a href="<?=home_url("direito")?>" class="botao botao__primario"><i class="fas fa-plus"></i> Mais informações</a>
                     </div>
                 </div>
 
@@ -47,7 +47,7 @@
                             <li><i class="fa-solid fa-chalkboard fa-fw"></i> <strong>Modalidade</strong>: Presencial</li>
                             <li><i class="fa-solid fa-graduation-cap fa-fw"></i> <strong>Formação</strong>: Bacharelado</li>
                         </ul>
-                        <a href="#" class="botao botao__primario"><i class="fas fa-plus"></i> Mais informações</a>
+                        <a href="<?=home_url("arquitetura-e-urbanismo")?>" class="botao botao__primario"><i class="fas fa-plus"></i> Mais informações</a>
                     </div>
                     <figure class="curso__figure">
                         <img src="<?= get_template_directory_uri(); ?>/assets/faviva-arquitetura.webp">
@@ -66,7 +66,7 @@
                             <li><i class="fa-solid fa-chalkboard fa-fw"></i> <strong>Modalidade</strong>: Presencial</li>
                             <li><i class="fa-solid fa-graduation-cap fa-fw"></i> <strong>Formação</strong>: Bacharelado</li>
                         </ul>
-                        <a href="#" class="botao botao__primario"><i class="fas fa-plus"></i> Mais informações</a>
+                        <a href="<?=home_url("ciencias-contabeis")?>" class="botao botao__primario"><i class="fas fa-plus"></i> Mais informações</a>
                     </div>
                 </div>
             </div>

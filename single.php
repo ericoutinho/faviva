@@ -35,6 +35,8 @@
                 ?>
             </h2>
 
+            <p style="opacity:0.5;"><i class="fas fa-clock"></i> Publicado em: <?=the_date()?></p>
+
             <ul class="page__share">
                 <li>
                     <a target="_blank" title="Compartilhe no Facebook" href="https://www.facebook.com/sharer/sharer.php?u=<?= the_permalink() ?>">

@@ -1,4 +1,4 @@
-body a.botao {
+body .botao {
     display: inline-block;
     padding: .5rem .9rem;
     border-radius: 3px;
@@ -7,7 +7,7 @@ body a.botao {
     font-size: .9rem;
     font-family: "Montserrat", sans-serif;
     white-space: nowrap;
-    text-decoration: none;
+    text-decoration: none !important;
 
     transition: background-color .2s;
 
@@ -17,11 +17,11 @@ body a.botao {
 
     &__primario {
         background-color: $cor_brand_b;
-        color: $cor_background_a;
+        color: $cor_background_a !important;
 
         &:hover {
             background-color: lighten($cor_brand_b, 10);
-            color: #fff;
+            color: #fff !important;
         }
     }
 

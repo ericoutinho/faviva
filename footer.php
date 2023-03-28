@@ -75,9 +75,9 @@
 
                 </div>
 
-                <div class="container" style="margin-top: 1.5rem;">
+                <div class="container" style="margin-top: 2.5rem;">
                     <a href="https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/MTQ0Mw==" target="_blank" title="e-MEC">
-                        <img src="<?=get_template_directory_uri();?>/assets/banner-emec.png" alt="e-MEC">
+                        <img style="width:100%;max-width: 460px; margin:auto;" src="<?=get_template_directory_uri();?>/assets/faviva-selo-emec-compact.png" alt="e-MEC">
                     </a>
                 </div>
                 
@@ -88,8 +88,9 @@
                     <h2>Saiba mais</h2>
                     <div class="row">
                         <div class="col">
-                            <a href="https://faviva.pincelatomico.net.br/" target="_blank" class="botao botao__primario"><i class="fa-solid fa-circle-user"></i> Área do aluno</a>
+                            <a href="https://faviva.pincelatomico.net.br/" target="_blank" class="botao botao__primario"><i class="fa-solid fa-circle-user"></i> Portal Acadêmico</a>
                             <ul class="saiba-mais">
+                                <li><a href="<?=home_url("validacao-de-documentos")?>"><i class="fa-solid fa-caret-right fa-fw"></i> Validação de Documentos</a></li>
                                 <li><a href="<?=home_url("graduacao")?>"><i class="fa-solid fa-caret-right fa-fw"></i> Graduação</a></li>
                                 <li><a title="Faça a sua inscrição!" target="_blank" href="https://faviva.pincelatomico.net.br/externos/nova_matricula/matricula.php"><i class="fa-solid fa-caret-right fa-fw"></i> Matrículas</a></li>
                                 <li><a href="<?=home_url("sobre")?>"><i class="fa-solid fa-caret-right fa-fw"></i> Sobre a FAVIVA</a></li>
@@ -105,7 +106,7 @@
                                 <li><strong>Faculdade VIVA Vitória Ltda.</strong></li>
                                 <!-- <li><strong>CNPJ</strong>: 00.000.000/0001-00</li> -->
                                 <li><strong>Mantenedora</strong>: Instituto VIVA Vitória</li>
-                                <li><i class="fa-solid fa-location-pin fa-fw"></i>Rua Almerinda Corina da Silva, n° 10<br/>Jardim Camburi, Vitória - ES<br/>CEP: 29090-550</li>
+                                <li><i class="fa-solid fa-location-pin fa-fw"></i>R. Italina Pereira Mota, 500 <br/>Jardim Camburi, Vitória - ES<br/> 29090-370</li>
                                 <li><i class="fa-solid fa-envelope-open fa-fw"></i><a href="mailto:contato@faviva.com.br">contato@faviva.com.br</a></li>
                                 <li><i class="fa-solid fa-phone-flip fa-fw"></i><a class="contatos__fone" href="tel:+5508006969999">0800 696 9999</a></li>
                                 <li>
@@ -124,7 +125,7 @@
             </section>
 
             <section id="mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d786.8787767941602!2d-40.26655282888294!3d-20.256870506617176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc8d4d5747c46fcc2!2sFAVIVA!5e0!3m2!1spt-BR!2sbr!4v1673641872654!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1573.758156264201!2d-40.26684311210523!3d-20.256811053135873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb819aca22bd969%3A0x863adf2cd58d203e!2sR.%20Italina%20Pereira%20Mota%2C%20500%20-%20Jardim%20Camburi%2C%20Vit%C3%B3ria%20-%20ES%2C%2029090-070!5e0!3m2!1spt-BR!2sbr!4v1678100402809!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
 
         </main>
