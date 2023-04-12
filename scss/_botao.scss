@@ -38,7 +38,7 @@ body .botao {
 
     &__secundario {
         background-color: $cor_brand_a;
-        color: $cor_background_a;
+        color: $cor_background_a !important;
 
         &:hover {
             background-color: lighten($cor_brand_a, 10);
@@ -56,15 +56,30 @@ body .botao {
             color: $cor_brand_a;
         }
     }
+
+    &__especial {
+        background-color: $cor_especial;
+        color: $cor_texto !important;
+
+        &:hover {
+            background-color: lighten($cor_especial, 10);
+            color: #444 !important;
+        }
+    }
 }
 
 .botao-grupo {
-    .botao:not(:last-child) {
-        margin-bottom: .5rem;
-    }
+    
     display: flex;
     flex-direction: column;
     width: max-content;
+    gap: .5rem;
+
+    & .botao
+    {
+        margin-bottom: 0 !important;
+        text-align: center;
+    }
 
     @include mobile {
         margin-inline: auto;

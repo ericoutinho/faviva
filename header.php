@@ -45,12 +45,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="<?= get_template_directory_uri(); ?>/assets/favicon-16x16.png">
     <link rel="manifest" href="<?= get_template_directory_uri(); ?>/assets/site.webmanifest">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/styles/main.min.css?v=<?=wp_get_theme()->get('Version')?>">
 
-    <script src="<?= get_template_directory_uri(); ?>/scripts/main.js" defer></script>
-    <script src="<?= get_template_directory_uri(); ?>/scripts/modal-lgpd.js" defer></script>
-    <script src="<?= get_template_directory_uri(); ?>/scripts/modal-whatsapp.js" defer></script>
 
     <?php wp_head(); ?>
 </head>
@@ -78,9 +73,11 @@
                         <span>Sobre <i class="fas fa-caret-down"></i></span>
                         <ul>
                             <li><a href="<?=home_url("sobre")?>">A FAVIVA</a></li>
+                            <li><a href="<?=home_url("npj-nucleo-de-pratica-juridica")?>">Núcleo de Prática Jurídica</a></li>
                             <li><a href="<?=home_url("cadastro-no-e-mec")?>">Cadastro no e-MEC</a></li>
                             <li><a href="<?=home_url("como-chegar-na-faviva")?>">Como chegar até aqui</a></li>
                             <li><a href="<?=home_url("validacao-de-documentos")?>">Validação de documentos</a></li>
+                            <li><a href="<?=home_url("cpa")?>">CPA</a></li>
                         </ul>
                     </li>
 
@@ -94,7 +91,7 @@
                     </li>
 
                     <li><a target="_blank" href="https://faviva.pincelatomico.net.br/externos/nova_matricula/matricula.php">Matrículas</a></li>
-                    <li><a href="<?=home_url("contato")?>">Contato</a></li>
+                    <li><a href="https://faviva.pincelatomico.net.br/externos/fale_conosco/" target="_blank">Contato</a></li>
                     <li><a href="<?=home_url("blog")?>">Blog</a></li>
                     <li><a href="https://faviva.pincelatomico.net.br/" target="_blank" class="botao botao__primario"><i class="fa-solid fa-circle-user"></i> Portal Acadêmico</a></li>
                 </ul>

@@ -1,4 +1,7 @@
 <?php
+
+    /* Template Name: PageDefault */
+
     /**
      * 
      * The PAGE for our theme
@@ -18,7 +21,7 @@
     <section class="page">
         <div class="container">
 
-        <?php 
+            <?php 
 
             if (have_posts()) :
                 while (have_posts()) : the_post();
@@ -114,5 +117,26 @@
             wp_reset_postdata();
         ?>
     </section>
+
+    <!-- <div class="backdrop-grade">
+        <div class="modal-grade">
+            <button class="modal-close"><i class="fa-solid fa-lg fa-xmark"></i></button>
+            <h3>Organização Curricular</h3>
+            <ul>
+                <li class="header">
+                    <span>Disciplina</span>
+                    <span>Carga horária</span>
+                </li>
+                <li>
+                    <span>Disciplina</span>
+                    <span>80</span>
+                </li>
+            </ul>
+            <div class="modal-total">
+                Carga horária total: 800
+            </div>
+            <button class="botao botao__secundario"><i class="fa-solid fa-arrow-left"></i> &nbsp; Fechar e Voltar</button>
+        </div>
+    </div> -->
 
 <?php get_footer(); ?>

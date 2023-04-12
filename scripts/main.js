@@ -82,3 +82,7 @@ formContato.addEventListener("submit", (e)=> {
         alert("Não foi possível enviar a mensagem. Tente novamente mais tarde.");
     })
 })
+
+function toggleMatriz() {
+    document.body.classList.toggle("open-matriz");
+}

@@ -90,11 +90,13 @@
                         <div class="col">
                             <a href="https://faviva.pincelatomico.net.br/" target="_blank" class="botao botao__primario"><i class="fa-solid fa-circle-user"></i> Portal Acadêmico</a>
                             <ul class="saiba-mais">
-                                <li><a href="<?=home_url("validacao-de-documentos")?>"><i class="fa-solid fa-caret-right fa-fw"></i> Validação de Documentos</a></li>
                                 <li><a href="<?=home_url("graduacao")?>"><i class="fa-solid fa-caret-right fa-fw"></i> Graduação</a></li>
                                 <li><a title="Faça a sua inscrição!" target="_blank" href="https://faviva.pincelatomico.net.br/externos/nova_matricula/matricula.php"><i class="fa-solid fa-caret-right fa-fw"></i> Matrículas</a></li>
                                 <li><a href="<?=home_url("sobre")?>"><i class="fa-solid fa-caret-right fa-fw"></i> Sobre a FAVIVA</a></li>
-                                <li><a href="<?=home_url("contato")?>"><i class="fa-solid fa-caret-right fa-fw"></i> Contato</a></li>
+                                <li><a href="<?=home_url("npj-nucleo-de-pratica-juridica")?>"><i class="fa-solid fa-caret-right fa-fw"></i> NPJ - Núcleo de Prática Jurídica</a></li>
+                                <li><a href="<?=home_url("validacao-de-documentos")?>"><i class="fa-solid fa-caret-right fa-fw"></i> Validação de Documentos</a></li>
+                                <li><a href="<?=home_url("sobre")?>"><i class="fa-solid fa-caret-right fa-fw"></i> CPA - Comissão Própria de Avaliação</a></li>
+                                <li><a href="https://faviva.pincelatomico.net.br/externos/fale_conosco/" target="_blank"><i class="fa-solid fa-caret-right fa-fw"></i> Contato</a></li>
                                 <li><a href="<?=home_url("blog")?>"><i class="fa-solid fa-caret-right fa-fw"></i> Blog</a></li>
                             </ul>
                         </div>
@@ -136,37 +138,35 @@
             </div>
         </footer>
 
-    <?php wp_footer(); ?>
-
-
-    <div class="modal-lgpd">
-        <div class="modal-lgpd__texto">
-        <strong>A FAVIVA e os cookies</strong>: utilizamos cookies para personalizar anúncios e melhorar a sua experiência no nosso site. Ao continuar navegando, você concorda com a nossa <a href="">Política de Privacidade</a> e <a href="">Política de Cookies</a>.
+        <div class="modal-lgpd">
+            <div class="modal-lgpd__texto">
+            <strong>A FAVIVA e os cookies</strong>: utilizamos cookies para personalizar anúncios e melhorar a sua experiência no nosso site. Ao continuar navegando, você concorda com a nossa <a href="">Política de Privacidade</a> e <a href="">Política de Cookies</a>.
+            </div>
+            <button class="botao botao__primario"><i class="fa-solid fa-xmark"></i> Aceitar e fechar</button>
         </div>
-        <button class="botao botao__primario"><i class="fa-solid fa-xmark"></i> Aceitar e fechar</button>
-    </div>
 
-    <div class="modal-whatsapp">
-        <div class="modal-whatsapp__wrapper">
-            <button title="Fechar widget do Whastsapp" class="modal-whatsapp__close"><i class="fa-solid fa-xmark"></i></button>
-            <h4><i class="fa-solid fa-caret-right"></i> Fale conosco agora!</h4>
-            <p>Utilize um de nossos canais pelo Whatsapp para tirar as suas dúvidas.</p>
-            <ul>
-                <li>
-                    <a title="Atendimento ao Cliente FAVIVA" target="_blank" href="https://wa.me/5527999280910">
-                        <img src="<?= get_template_directory_uri() ?>/assets/faviva-whatsapp-profile-a.webp" alt="">
-                        <span>
-                            Atendimento ao cliente
-                            <small>Clique para iniciar a conversa</small>
-                        </span>
-                        <i class="fas fa-chevron-right"></i>
-                    </a>
-                </li>
-            </ul>
+        <div class="modal-whatsapp">
+            <div class="modal-whatsapp__wrapper">
+                <button title="Fechar widget do Whastsapp" class="modal-whatsapp__close"><i class="fa-solid fa-xmark"></i></button>
+                <h4><i class="fa-solid fa-caret-right"></i> Fale conosco agora!</h4>
+                <p>Utilize um de nossos canais pelo Whatsapp para tirar as suas dúvidas.</p>
+                <ul>
+                    <li>
+                        <a title="Atendimento ao Cliente FAVIVA" target="_blank" href="https://wa.me/5527999280910">
+                            <img src="<?= get_template_directory_uri() ?>/assets/faviva-whatsapp-profile-a.webp" alt="">
+                            <span>
+                                Atendimento ao cliente
+                                <small>Clique para iniciar a conversa</small>
+                            </span>
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <button class="modal-whatsapp__button" title="Chame-nos no Whatsapp" aria-label="button"><i class="fab fa-whatsapp"></i></button>
         </div>
-        <button class="modal-whatsapp__button" title="Chame-nos no Whatsapp" aria-label="button"><i class="fab fa-whatsapp"></i></button>
-    </div>
-    
+        
+        <?php wp_footer(); ?>
 
     </body>
 </html>
