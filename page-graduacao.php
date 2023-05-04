@@ -54,21 +54,7 @@
                     </figure>
                 </div>
 
-                <div class="curso">
-                    <figure class="curso__figure">
-                        <img src="<?= get_template_directory_uri(); ?>/assets/faviva-contabilidade.webp">
-                    </figure>
-                    <div class="curso__texto">
-                        <h3><small>Graduação em</small>Ciência Contábeis</h3>
-                        <p>O curso de <strong>Ciências Contábeis</strong> da FAVIVA forma profissionais capacitados para trabalhar de forma produtiva e eficiente na gestão e no controle financeiro de pequenas, médias e grandes empresas, oferendo conhecimento técnico para o futuro profissional exercer todas as funções de um contador.</p>
-                        <ul>
-                            <li><i class="fa-solid fa-clock fa-fw"></i> <strong>Duração</strong>: 5 anos</li>
-                            <li><i class="fa-solid fa-chalkboard fa-fw"></i> <strong>Modalidade</strong>: Presencial</li>
-                            <li><i class="fa-solid fa-graduation-cap fa-fw"></i> <strong>Formação</strong>: Bacharelado</li>
-                        </ul>
-                        <a href="<?=home_url("ciencias-contabeis")?>" class="botao botao__primario"><i class="fas fa-plus"></i> Mais informações</a>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </section>

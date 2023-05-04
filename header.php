@@ -84,9 +84,8 @@
                     <li class="menu__dropdown">
                         <span>Graduação <i class="fas fa-caret-down"></i></span>
                         <ul>
-                            <li><a href="<?=home_url("direito")?>">Direito</a></li>
                             <li><a href="<?=home_url("arquitetura-e-urbanismo")?>">Arquitetura e Urbanismo</a></li>
-                            <li><a href="<?=home_url("ciencias-contabeis")?>">Ciências Contábeis</a></li>
+                            <li><a href="<?=home_url("direito")?>">Direito</a></li>
                         </ul>
                     </li>
 
