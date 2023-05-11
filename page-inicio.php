@@ -20,11 +20,11 @@
         <div class="container">
             <div class="hero">
                 <div class="hero__texto">
-                    <h2>Uma insituição em constante evolução.</h2>
-                    <p>Faça parte de uma instituição com filosofia inclusiva, pautada na experiência empírica de seus alunos e na <strong>formação de profissionais qualificados</strong>.</p>
+                    <h2>Uma instituição em constante evolução.</h2>
+                    <p>Faça parte de uma instituição com filosofia inclusiva, pautada na experiência empírica de seus alunos e na <strong>formação de profissionais desejados pelo mercado de trabalho</strong>.</p>
                     <div class="botao-grupo">
-                        <a href="#graduacao" class="botao botao__outline"><i class="fa-solid fa-magnifying-glass"></i> Conhecer os nossos cursos</a>
-                        <a target="_blank" href="https://faviva.pincelatomico.net.br/externos/nova_matricula/matricula.php" class="botao botao__primario"><i class="fa-solid fa-pencil"></i> Fazer minha inscrição agora!</a>
+                        <a href="#graduacao" class="botao botao__outline"><i class="fa-solid fa-magnifying-glass"></i> Conheça nossos cursos</a>
+                        <a target="_blank" href="https://faviva.pincelatomico.net.br/externos/nova_matricula/matricula.php" class="botao botao__primario"><i class="fa-solid fa-pencil"></i> Faça sua inscrição agora!</a>
                     </div>
                 </div>
                 <figure class="hero__figure" style="margin-bottom:0;">

@@ -45,7 +45,7 @@
                     // The Loop
                     if ( $the_query->have_posts() ) :
                 ?>
-                    <h2><i class="fa-solid fa-caret-right"></i> Últimas do blog</h2>
+                    <h2>Últimas do blog</h2>
                     <div class="artigos">
                 <?php
                         while ( $the_query->have_posts() ) :

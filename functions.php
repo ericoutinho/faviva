@@ -88,12 +88,12 @@ add_action('wp_ajax_nopriv_sendMyMail', 'sendMyMail');
 
 
 // OpenGraph settings
-// function doctype_opengraph($output) {
-//     return $output . '
-//     xmlns:og="http://opengraphprotocol.org/schema/"
-//     xmlns:fb="http://www.facebook.com/2008/fbml"';
-// }
-// add_filter('language_attributes', 'doctype_opengraph');
+function doctype_opengraph($output) {
+    return $output . '
+    xmlns:og="http://opengraphprotocol.org/schema/"
+    xmlns:fb="http://www.facebook.com/2008/fbml"';
+}
+add_filter('language_attributes', 'doctype_opengraph');
 
 
 function facebook_open_graph() {

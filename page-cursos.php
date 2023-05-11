@@ -29,7 +29,7 @@
             <article>
                 <h2 class="curso-titulo">
                     <small>Graduação em</small>
-                    <i class='fa-solid fa-caret-right'></i>
+                    <!-- <i class='fa-solid fa-caret-right'></i> -->
                     <?= the_title(); ?>
                 </h2>
 

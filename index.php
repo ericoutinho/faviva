@@ -17,7 +17,7 @@
     
     <section id="page-blog">
         <div class="container">
-            <h2><i class="fa-solid fa-caret-right"></i> Blog da FAVIVA</h2>
+            <h2>Blog da FAVIVA</h2>
 
             <?php
                 // O Loop

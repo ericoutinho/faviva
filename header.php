@@ -22,7 +22,7 @@
     <!-- Theme color mobile -->
     <meta name="theme-color" content="#1E8BB0">
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="<?= get_template_directory_uri(); ?>/assets/favicon-32x32.png">
+    <link rel="icon" href="<?= get_template_directory_uri(); ?>/assets/favicon.svg">
 
     <?php wp_head(); ?>
 </head>

@@ -38,7 +38,7 @@
                     if (is_page(array("direito","arquitetura-e-urbanismo","ciencias-contabeis"))) {
                         echo "<small>Graduação em</small>";
                     }
-                    echo "<i class='fa-solid fa-caret-right'></i> ";
+                    // echo "<i class='fa-solid fa-caret-right'></i> ";
                     the_title();
                 ?>
             </h2>

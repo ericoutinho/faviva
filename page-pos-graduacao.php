@@ -12,12 +12,11 @@
  */
 
  get_header();
- 
 ?>
 
     <section id="posgraduacao">
         <div class="container">
-            <h2><i class="fa-solid fa-caret-right"></i> Pós-Graduação</h2>
+            <h2>Pós-Graduação</h2>
             <p>Os curso de <strong>Pós-Graduação da FAVIVA</strong> são a melhor maneira para se tornar um profissional desejado pelo mercado e alancar a sua carreira.</p>
             <p>Turbine ainda mais o seu currículo com <strong>cursos de especialização modernos</strong> e voltados para áreas com alta demanda por vagas e salários muito acima da média de mercado.</p>
 
