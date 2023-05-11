@@ -13,34 +13,7 @@
 
  get_header();
 ?>
-    <section>
-        <?php
-            $args = array(
-                'post_type' => array('post'),
-                'post_status' => array('publish'),
-                'posts_per_page'  => '1',
-                'order' => 'DESC',
-                // 'orderby' => 'date',
-                'orderby' => 'rand',
-                'tax_query' => array(
-                    array(
-                        'taxonomy' => 'post_format',
-                        'field' => 'slug',
-                        'terms' => array( 'post-format-image' )
-                    )
-                )
-            );
-
-            $banner = new WP_Query($args);
-            if ($banner->have_posts()) :
-                while ($banner->have_posts()):
-                    $banner->the_post();
-                    the_content();
-                endwhile;
-            endif;
-            wp_reset_postdata();
-        ?>
-    </section>
+    
     
     <section id="page-blog">
         <div class="container">

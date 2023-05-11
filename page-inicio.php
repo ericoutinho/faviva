@@ -49,33 +49,18 @@
         </div>
     </section>
 
-    <section>
-        <?php
-            $args = array(
-                'post_type' => array('post'),
-                'post_status' => array('publish'),
-                'posts_per_page'  => '1',
-                'order' => 'DESC',
-                // 'orderby' => 'date',
-                'orderby' => 'rand',
-                'tax_query' => array(
-                    array(
-                        'taxonomy' => 'post_format',
-                        'field' => 'slug',
-                        'terms' => array( 'post-format-image' )
-                    )
-                )
-            );
-
-            $banner = new WP_Query($args);
-            if ($banner->have_posts()) :
-                while ($banner->have_posts()):
-                    $banner->the_post();
-                    the_content();
-                endwhile;
-            endif;
-            wp_reset_postdata();
-        ?>
+    <section id="vestibular">
+        <div class="container">
+            <div class="vestibular">
+                <div class="vestibular__texto">
+                    <h2>Muito mais segurança </br>em sua formação!</h2>
+                    <p>Na <strong>FAVIVA</strong> você pode cursar sua graduação de forma tranquila e segura, com a garantia de alcançar o seu <strong>diploma registrado e reconhecido em todo o Território Nacional</strong>.</p>
+                </div>
+                <figure style="margin-bottom:0;">
+                    <img src="<?= get_template_directory_uri(); ?>/assets/faviva-seguranca-diploma.webp" alt="Alunos usando um laptop">
+                </figure>
+            </div>
+        </div>
     </section>
 
     <section id="graduacao">
@@ -129,7 +114,7 @@
                 </figure>
                 <div class="vestibular__texto">
                     <h2>Faça já sua matrícula!</h2>
-                    <p><strong>Não perca mais tempo</strong>! As matrículas estão abertas e as vagas são limitadas. <strong>Garanta logo a sua!</strong></p>
+                    <p><strong>Não perca mais tempo</strong>! As matrículas estão abertas e as vagas são limitadas. <strong>Garanta logo a sua vaga!</strong></p>
                     <a class="botao botao__secundario" title="Faça a sua inscrição!" target="_blank" href="https://faviva.pincelatomico.net.br/externos/nova_matricula/matricula.php">Comece o seu sonho agora! <i class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
             </div>

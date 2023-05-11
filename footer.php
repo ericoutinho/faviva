@@ -53,7 +53,7 @@
                 ?>
                         <div class="artigo">
                             <figure class="artigo__figure" style="margin-bottom:0;">
-                                <img src="<?= the_post_thumbnail_url() ?>" alt="Imagem de capa da notícia">
+                                <img src="<?= the_post_thumbnail_url("cards") ?>" alt="Imagem de capa da notícia">
                             </figure>
                             <div class="artigo__texto">
                                 <small><?= the_category('&bull;') ?></small>

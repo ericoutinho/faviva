@@ -13,15 +13,23 @@
 function addThemeSuport()  {
 	// Add theme support for Post Formats
 	add_theme_support( 'post-formats', array( 'image', 'gallery' ));
-
 	// Add theme support for Featured Images
 	add_theme_support( 'post-thumbnails', array( 'post', 'page' ) );
-
 	// Add theme support for document Title tag
 	add_theme_support( 'title-tag' );
 }
 
 add_action( 'after_setup_theme', 'addThemeSuport' );
+
+
+// Set media sizes
+function wpdocs_theme_setup() {
+	add_image_size( 'cards', 400, 200, array("center", "center") );
+	add_image_size( 'article', 450, 250, array("center", "center") );
+	add_image_size( 'page-header', 900, 250, array("center", "center") );
+}
+
+add_action( 'after_setup_theme', 'wpdocs_theme_setup' );
 
 
 // Carregando scripts e estilos
@@ -77,3 +85,54 @@ function sendMyMail() {
 
 add_action('wp_ajax_sendMyMail', 'sendMyMail');
 add_action('wp_ajax_nopriv_sendMyMail', 'sendMyMail');
+
+
+// OpenGraph settings
+// function doctype_opengraph($output) {
+//     return $output . '
+//     xmlns:og="http://opengraphprotocol.org/schema/"
+//     xmlns:fb="http://www.facebook.com/2008/fbml"';
+// }
+// add_filter('language_attributes', 'doctype_opengraph');
+
+
+function facebook_open_graph() {
+	global $post;
+	$image = "";
+
+	if (!is_singular()) {
+		return;
+	}
+
+	if ( $excerpt = $post->post_excerpt ) {
+		$excerpt = strip_tags( $post->post_excerpt );
+		$excerpt = str_replace( "", "'", $excerpt );
+	} else {
+		$excerpt = get_bloginfo('description');
+	}
+ 
+	// Get image when possible
+	if ( !has_post_thumbnail( $post->ID ) ) {
+		$image = get_template_directory_uri() . "/assets/faviva-opengraph.webp";
+	} else {
+		$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' );
+		$image =  esc_attr( $image[0] );
+	}
+
+	echo "\t<!-- OpenGraph Metatags -->\n";
+	echo "\t<meta property='og:type' content='article'/>\n";
+	echo "\t<meta property='og:url' content='" . get_permalink() . "'/>\n";
+	echo "\t<meta property='og:title' content='" . get_the_title() . "'/>\n";
+	echo "\t<meta property='og:description' content='{$excerpt}'/>\n";
+	echo "\t<meta property='og:image' content='{$image}'/>\n";
+
+	echo "\t<!-- Twitter Metatags -->\n";
+	echo "\t<meta property='twitter:card' content='summary_large_image'>\n";
+	echo "\t<meta property='twitter:url' content='" . get_permalink() . "'>\n";
+	echo "\t<meta property='twitter:title' content='" . get_the_title() . "'>\n";
+	echo "\t<meta property='twitter:description' content='{$excerpt}'>\n";
+	echo "\t<meta property='twitter:image' content='{$image}'>\n";
+
+	echo "";
+}
+add_action( 'wp_head', 'facebook_open_graph', 5 );

@@ -89,54 +89,5 @@
         </div>
     </section>
 
-    <section>
-        <?php
-            $args = array(
-                'post_type' => array('post'),
-                'post_status' => array('publish'),
-                'posts_per_page'  => '1',
-                'order' => 'DESC',
-                // 'orderby' => 'date',
-                'orderby' => 'rand',
-                'tax_query' => array(
-                    array(
-                        'taxonomy' => 'post_format',
-                        'field' => 'slug',
-                        'terms' => array( 'post-format-image' )
-                    )
-                )
-            );
-
-            $banner = new WP_Query($args);
-            if ($banner->have_posts()) :
-                while ($banner->have_posts()):
-                    $banner->the_post();
-                    the_content();
-                endwhile;
-            endif;
-            wp_reset_postdata();
-        ?>
-    </section>
-
-    <!-- <div class="backdrop-grade">
-        <div class="modal-grade">
-            <button class="modal-close"><i class="fa-solid fa-lg fa-xmark"></i></button>
-            <h3>Organização Curricular</h3>
-            <ul>
-                <li class="header">
-                    <span>Disciplina</span>
-                    <span>Carga horária</span>
-                </li>
-                <li>
-                    <span>Disciplina</span>
-                    <span>80</span>
-                </li>
-            </ul>
-            <div class="modal-total">
-                Carga horária total: 800
-            </div>
-            <button class="botao botao__secundario"><i class="fa-solid fa-arrow-left"></i> &nbsp; Fechar e Voltar</button>
-        </div>
-    </div> -->
 
 <?php get_footer(); ?>

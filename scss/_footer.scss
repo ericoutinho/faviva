@@ -3,10 +3,5 @@ footer {
     background-color: $cor_brand_a;
     color: $cor_background_a;
     font-size: .85rem;
-
-    .container {
-        @include mobile {
-            text-align: center;
-        }
-    }
+    text-align: center;
 }

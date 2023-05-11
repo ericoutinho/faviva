@@ -21,7 +21,7 @@
         ?>
 
         <figure class="page__figure">
-            <img src="<?= the_post_thumbnail_url() ?>" alt="Imagem de capa da página">
+            <img src="<?= the_post_thumbnail_url("page-header") ?>" alt="Imagem de capa da página">
         </figure>
 
         <div class="article-wrapper">
@@ -100,33 +100,5 @@
     </div>
 </section>
 
-<section>
-    <?php
-    $args = array(
-        'post_type' => array('post'),
-        'post_status' => array('publish'),
-        'posts_per_page'  => '1',
-        'order' => 'DESC',
-        // 'orderby' => 'date',
-        'orderby' => 'rand',
-        'tax_query' => array(
-            array(
-                'taxonomy' => 'post_format',
-                'field' => 'slug',
-                'terms' => array('post-format-image')
-            )
-        )
-    );
-
-    $banner = new WP_Query($args);
-    if ($banner->have_posts()) :
-        while ($banner->have_posts()) :
-            $banner->the_post();
-            the_content();
-        endwhile;
-    endif;
-    wp_reset_postdata();
-    ?>
-</section>
 
 <?php get_footer(); ?>
