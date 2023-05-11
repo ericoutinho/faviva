@@ -89,16 +89,15 @@
                     <div class="row">
                         <div class="col">
                             <a href="https://faviva.pincelatomico.net.br/" target="_blank" class="botao botao__primario"><i class="fa-solid fa-circle-user"></i> Portal Acadêmico</a>
-                            <ul class="saiba-mais">
-                                <li><a href="<?=home_url("graduacao")?>"><i class="fa-solid fa-caret-right fa-fw"></i> Graduação</a></li>
-                                <li><a title="Faça a sua inscrição!" target="_blank" href="https://faviva.pincelatomico.net.br/externos/nova_matricula/matricula.php"><i class="fa-solid fa-caret-right fa-fw"></i> Matrículas</a></li>
-                                <li><a href="<?=home_url("sobre")?>"><i class="fa-solid fa-caret-right fa-fw"></i> Sobre a FAVIVA</a></li>
-                                <li><a href="<?=home_url("npj-nucleo-de-pratica-juridica")?>"><i class="fa-solid fa-caret-right fa-fw"></i> NPJ - Núcleo de Prática Jurídica</a></li>
-                                <li><a href="<?=home_url("validacao-de-documentos")?>"><i class="fa-solid fa-caret-right fa-fw"></i> Validação de Documentos</a></li>
-                                <li><a href="<?=home_url("sobre")?>"><i class="fa-solid fa-caret-right fa-fw"></i> CPA - Comissão Própria de Avaliação</a></li>
-                                <li><a href="https://faviva.pincelatomico.net.br/externos/fale_conosco/" target="_blank"><i class="fa-solid fa-caret-right fa-fw"></i> Contato</a></li>
-                                <li><a href="<?=home_url("blog")?>"><i class="fa-solid fa-caret-right fa-fw"></i> Blog</a></li>
-                            </ul>
+                            <?php
+                                wp_nav_menu(
+                                    array(
+                                        "menu" => "footer-menu",
+                                        "menu_class" => "saiba-mais",
+                                        "container" => ""
+                                    )
+                                );
+                            ?>
                         </div>
 
                         <div class="col separator"></div>
@@ -134,7 +133,7 @@
 
         <footer>
             <div class="container">
-                FAVIVA &copy; 2022 &bullet; Todos os direitos reservados
+                FAVIVA &copy; 2022 - <?= date("Y"); ?> &bullet; Todos os direitos reservados
             </div>
         </footer>
 

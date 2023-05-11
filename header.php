@@ -19,84 +19,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Primary Meta Tags -->
-    <title><?php bloginfo('title'); ?></title>
-    <meta name="description" content="<?php bloginfo("description") ?>">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="<?php bloginfo("url"); ?>">
-    <meta property="og:title" content="<?php bloginfo("title") ?>">
-    <meta property="og:description" content="<?php bloginfo("description") ?>">
-    <meta property="og:image" content="<?= get_template_directory_uri() ?>/assets/faviva-meta-imagem.webp">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="<?php bloginfo("url"); ?>">
-    <meta property="twitter:title" content="<?php bloginfo("title") ?>">
-    <meta property="twitter:description" content="<?php bloginfo("description") ?>">
-    <meta property="twitter:image" content="<?= get_template_directory_uri() ?>/assets/faviva-meta-imagem.webp">
 
     <!-- Theme color mobile -->
     <meta name="theme-color" content="#1E8BB0">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="<?= get_template_directory_uri(); ?>/assets">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?= get_template_directory_uri(); ?>/assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?= get_template_directory_uri(); ?>/assets/favicon-16x16.png">
-    <link rel="manifest" href="<?= get_template_directory_uri(); ?>/assets/site.webmanifest">
-
-
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="<?= get_template_directory_uri(); ?>/assets/favicon-32x32.png">
 
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?> >
 <?php wp_body_open(); ?>
 
-    <header>
-
-        <nav class="menu">
-            <div class="menu__colapse">
-
-                <!-- Brand -->
-                <a class="menu__brand" href="<?= home_url("/"); ?>" title="FAVIVA" alt="Logomarca da FAVIVA">
-                    <img src="<?= get_template_directory_uri(); ?>/assets/faviva-logomarca.svg" alt="Logomarca FAVIVA">
-
-                </a>
-                <!-- Toggle button -->
-                <button class="menu__toggle"><i class="fa-solid fa-bars"></i></button>
-
-                <!-- Menu links -->
-                <ul class="menu__links">
-                    <!-- <li><a href="<?=home_url("sobre")?>">Sobre</a></li> -->
-
-                    <li class="menu__dropdown">
-                        <span>Sobre <i class="fas fa-caret-down"></i></span>
-                        <ul>
-                            <li><a href="<?=home_url("sobre")?>">A FAVIVA</a></li>
-                            <li><a href="<?=home_url("npj-nucleo-de-pratica-juridica")?>">Núcleo de Prática Jurídica</a></li>
-                            <li><a href="<?=home_url("cadastro-no-e-mec")?>">Cadastro no e-MEC</a></li>
-                            <li><a href="<?=home_url("como-chegar-na-faviva")?>">Como chegar até aqui</a></li>
-                            <li><a href="<?=home_url("validacao-de-documentos")?>">Validação de documentos</a></li>
-                            <li><a href="<?=home_url("cpa")?>">CPA</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="menu__dropdown">
-                        <span>Graduação <i class="fas fa-caret-down"></i></span>
-                        <ul>
-                            <li><a href="<?=home_url("arquitetura-e-urbanismo")?>">Arquitetura e Urbanismo</a></li>
-                            <li><a href="<?=home_url("direito")?>">Direito</a></li>
-                        </ul>
-                    </li>
-
-                    <li><a target="_blank" href="https://faviva.pincelatomico.net.br/externos/nova_matricula/matricula.php">Matrículas</a></li>
-                    <li><a href="https://faviva.pincelatomico.net.br/externos/fale_conosco/" target="_blank">Contato</a></li>
-                    <li><a href="<?=home_url("blog")?>">Blog</a></li>
-                    <li><a href="https://faviva.pincelatomico.net.br/" target="_blank" class="botao botao__primario"><i class="fa-solid fa-circle-user"></i> Portal Acadêmico</a></li>
-                </ul>
-            </div>
-        </nav>
-
-    </header>
+    <nav class="menu-top">
+        <div class="menu-container">
+            <a href="<?= site_url("/") ?>">
+                <img class="menu-brand" src="<?= get_template_directory_uri() ?>/assets/faviva-logomarca.svg" alt="Brand">
+            </a>
+            <button class="menu-toggle" aria-label="button"><i class="fa-solid fa-bars" onclick="menuToggle()"></i></button>
+            <?php
+                wp_nav_menu(
+                    array(
+                        "menu" => "top-menu",
+                        "menu_class" => "menu-items",
+                        "container" => ""
+                    )
+                );
+            ?>
+            <a class="menu-button" href="https://faviva.pincelatomico.net.br/" target="_blank">
+                <i class="fa-solid fa-circle-user"></i>
+                Portal Acadêmico
+            </a>
+            <!-- <div class="menu-social">
+                <a href="https://www.instagram.com/faviva.es" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/faviva" target="_blank" title="Linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://wa.me/5527999280910" target="_blank" title="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div> -->
+        </div>
+    </nav>
 
     <main>

@@ -4,11 +4,17 @@
 //     }
 // }
 
-const toggle = document.querySelector(".menu__toggle");
-const menu = document.querySelector(".menu__links");
-toggle.addEventListener("click", () => {
-    menu.classList.toggle("open");
-})
+// const toggle = document.querySelector(".menu__toggle");
+// const menu = document.querySelector(".menu__links");
+// toggle.addEventListener("click", () => {
+//     menu.classList.toggle("open");
+// })
+
+
+// Menu toggle
+const menuToggle = () => {
+    document.querySelector(".menu-top").classList.toggle("active")
+}
 
 
 // Format telefone

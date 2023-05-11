@@ -1,9 +1,7 @@
 <?php
 /**
  * The Functions for our theme
- *
  * This is the template that displays all of the <head> section
- *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package WordPress
@@ -22,9 +20,11 @@ function addThemeSuport()  {
 	// Add theme support for document Title tag
 	add_theme_support( 'title-tag' );
 }
+
 add_action( 'after_setup_theme', 'addThemeSuport' );
 
 
+// Carregando scripts e estilos
 function wp_action_enqueue_scripts()
 {
     wp_enqueue_script("scripts", get_template_directory_uri(). "/scripts/main.js", null, null, true );
@@ -36,6 +36,15 @@ function wp_action_enqueue_scripts()
 }
 
 add_action('wp_enqueue_scripts', 'wp_action_enqueue_scripts', 10);
+
+
+// Registrando menus
+function register_primary_menu() {
+    register_nav_menu( 'top-menu', __( 'Menu principal', 'faviva' ) );
+    register_nav_menu( 'footer-menu', __( 'Menu do rodapé', 'faviva' ) );
+}
+
+add_action( 'after_setup_theme', 'register_primary_menu' );
 
 
 // Envio de email de contato
@@ -65,7 +74,6 @@ function sendMyMail() {
 
 	die();
 }
-
 
 add_action('wp_ajax_sendMyMail', 'sendMyMail');
 add_action('wp_ajax_nopriv_sendMyMail', 'sendMyMail');

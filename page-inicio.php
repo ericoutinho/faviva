@@ -20,15 +20,15 @@
         <div class="container">
             <div class="hero">
                 <div class="hero__texto">
-                    <h2>Ensino de excelência ao seu alcance.</h2>
-                    <p>Conquiste sua graduação e se torne um profissional desejado pelo mercado <strong>com mensalidades que cabem no seu bolso</strong>.</p>
+                    <h2>Uma insituição em constante evolução.</h2>
+                    <p>Faça parte de uma instituição com filosofia inclusiva, pautada na experiência empírica de seus alunos e na <strong>formação de profissionais qualificados</strong>.</p>
                     <div class="botao-grupo">
                         <a href="#graduacao" class="botao botao__outline"><i class="fa-solid fa-magnifying-glass"></i> Conhecer os nossos cursos</a>
                         <a target="_blank" href="https://faviva.pincelatomico.net.br/externos/nova_matricula/matricula.php" class="botao botao__primario"><i class="fa-solid fa-pencil"></i> Fazer minha inscrição agora!</a>
                     </div>
                 </div>
                 <figure class="hero__figure" style="margin-bottom:0;">
-                    <img src="<?= get_template_directory_uri() ?>/assets/faviva-hero.webp" alt="Aluno homem de mochila e cadernos empolgado">
+                    <img src="<?= get_template_directory_uri() ?>/assets/faviva-hero-image.webp" alt="Aluno homem de mochila e cadernos empolgado">
                 </figure>
             </div>
         </div>
