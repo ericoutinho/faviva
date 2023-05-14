@@ -35,12 +35,12 @@ add_action( 'after_setup_theme', 'wpdocs_theme_setup' );
 // Carregando scripts e estilos
 function wp_action_enqueue_scripts()
 {
-    wp_enqueue_script("scripts", get_template_directory_uri(). "/scripts/main.js", null, null, true );
-    wp_enqueue_script("modal-lgpd", get_template_directory_uri(). "/scripts/modal-lgpd.js", null, null, true );
-    wp_enqueue_script("modal-whatsapp", get_template_directory_uri(). "/scripts/modal-whatsapp.js", null, null, true );
+    wp_enqueue_script("scripts", get_template_directory_uri(). "/scripts/main.js", array(), filemtime(get_template_directory() . "/scripts/main.js"), true );
+    wp_enqueue_script("modal-lgpd", get_template_directory_uri(). "/scripts/modal-lgpd.js", array(), filemtime(get_template_directory() . "/scripts/modal-lgpd.js"), true );
+    wp_enqueue_script("modal-whatsapp", get_template_directory_uri(). "/scripts/modal-whatsapp.js", array(), filemtime(get_template_directory() . "/scripts/modal-whatsapp.js"), true );
 
     wp_enqueue_style('fontawesome', "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
-    wp_enqueue_style('extras', get_template_directory_uri() . '/styles/main.min.css');
+    wp_enqueue_style('extras', get_template_directory_uri() . '/styles/main.min.css', array(), filemtime(get_template_directory() . '/styles/main.min.css'), false);
 }
 
 add_action('wp_enqueue_scripts', 'wp_action_enqueue_scripts', 10);
