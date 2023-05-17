@@ -132,13 +132,16 @@ section.page {
         margin-bottom: 2rem;
 
         a {
-            font-size: 1.05rem;
-            color: #999;
+            font-size: 1rem;
+            background: #888;
+            color: #fff;
             transition: color .2s;
             text-decoration: none;
+            padding: .6rem;
+            border-radius: 4px;
 
             &:is(:hover, :active) {
-                color: $cor_brand_b;
+                opacity: 0.7;
             }
         }
     }

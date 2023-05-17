@@ -100,6 +100,7 @@
 }
 
 #menu-top-menu .sub-menu a {
+    position: relative;
     background-color: $cor_texto;
     color: #fff;
     text-align: start;
@@ -185,6 +186,11 @@
     }
 }
 
-.current-menu-item {
+.menu-items li > a[aria-current='page'], .current-menu-parent > a{
     font-weight: 600;
+}
+
+.sub-menu li > a[aria-current='page'] {
+    font-weight: 600;
+    color: lightskyblue !important;
 }

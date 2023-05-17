@@ -18,7 +18,7 @@
                     $args = array(
                         'post_type' => array('post'),
                         'post_status' => array('publish'),
-                        'posts_per_page'  => '3',
+                        'posts_per_page'  => '6',
                         'order' => 'DESC',
                         'orderby' => 'date',
                         'tax_query' => array(
@@ -58,7 +58,7 @@
                             <div class="artigo__texto">
                                 <small><?= the_category('&bull;') ?></small>
                                 <h3><?= the_title() ?></h3>
-                                <p><?= the_excerpt() ?></p>
+                                <?= the_excerpt() ?>
                                 <a class="artigo__link" href="<?= the_permalink() ?>"></a>
                             </div>
                         </div>

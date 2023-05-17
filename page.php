@@ -45,18 +45,23 @@
 
             <ul class="page__share">
                 <li>
-                    <a target="_blank" title="Compartilhe no Facebook" href="https://www.facebook.com/sharer/sharer.php?u=<?= the_permalink() ?>">
-                        <i class="fab fa-lg fa-square-facebook"></i>
+                    <a target="_blank" title="Compartilhe no Facebook" style="background:#334D87;" href="https://www.facebook.com/sharer/sharer.php?u=<?= the_permalink() ?>">
+                        <i class="fab fa-lg fa-fw fa-facebook-f"></i>
                     </a>
                 </li>
                 <li>
-                    <a target="_blank" title="Compatilhe no Linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=<?= the_permalink() ?>">
-                        <i class="fab fa-lg fa-linkedin"></i>
+                    <a target="_blank" title="Compartilhe no Twitter" style="background:#0099D7;" href="https://twitter.com/intent/tweet?text=<?= the_title() ?>&url=<?= the_permalink() ?>">
+                        <i class="fab fa-lg fa-fw fa-twitter"></i>
                     </a>
                 </li>
                 <li>
-                    <a target="_blank" title="Compatilhe via Whatsapp" href="https://api.whatsapp.com/send?text=Veja esta publicação: <?=the_permalink()?>">
-                        <i class="fab fa-lg fa-whatsapp"></i>
+                    <a target="_blank" title="Compatilhe no Linkedin" style="background: #00669C;" href="https://www.linkedin.com/shareArticle?mini=true&url=<?= the_permalink() ?>">
+                        <i class="fab fa-lg fa-fw fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" title="Compatilhe via Whatsapp" style="background:#25d366;" href="https://api.whatsapp.com/send?text=Veja esta publicação: <?=the_permalink()?>">
+                        <i class="fab fa-lg fa-fw fa-whatsapp"></i>
                     </a>
                 </li>
             </ul>
