@@ -136,3 +136,17 @@ function facebook_open_graph() {
 	echo "";
 }
 add_action( 'wp_head', 'facebook_open_graph', 5 );
+
+
+function showDocente( $atts = array()) {
+	extract( shortcode_atts( array(
+		'image' => 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?w=640&h=960',
+		'name' => 'Nome do professor',
+		'title' => 'Titulação',
+		'link' => 'http://google.com'
+	), $atts));
+
+	return "<div class='docente-card'><img class='docente-img' src='{$image}'><div class='docente-body'><h5>{$name}</h5><p>{$title}</p><a href='{$link}'>Plataforma Lattes</a></div></div>";
+}
+
+add_shortcode('showdocente', 'showDocente');
