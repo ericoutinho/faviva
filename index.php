@@ -82,8 +82,9 @@
             <?php
                     endwhile;
 
-                    echo get_next_posts_link() ? "<a class='botao botao__primario--outline' href='".get_next_posts_link()."' ><i class='fa-solid fa-chevron-left'></i> Anteriores</a> &nbsp;" : "";
-                    echo get_previous_posts_link() ? "<a class='botao botao__primario--outline' href='".get_previous_posts_link()."' >Próximos <i class='fa-solid fa-chevron-right'></i></a>" : "";
+                    // echo get_next_posts_link() ? "<a class='botao botao__primario--outline' href='".get_next_posts_link()."' ><i class='fa-solid fa-chevron-left'></i> Anteriores</a> &nbsp;" : "";
+                    // echo get_previous_posts_link() ? "<a class='botao botao__primario--outline' href='".get_previous_posts_link()."' >Próximos <i class='fa-solid fa-chevron-right'></i></a>" : "";
+                    echo "<div class='blog-nav-links'>" . get_previous_posts_link("&larr; Posts recentes ") . get_next_posts_link("Posts anteriores &rarr;") . "</div>";
             
                     wp_reset_query();
                 endif;

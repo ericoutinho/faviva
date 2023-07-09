@@ -151,3 +151,29 @@ section {
         }
     }
 }
+
+.blog-nav-links {
+    display: flex;
+    justify-content: space-between;
+    justify-items: right;
+
+    a {
+        display: inline-block;
+        padding: .5rem .9rem;
+        border-radius: 3px;
+        border: none;
+        cursor: pointer;
+        font-size: .9rem;
+        font-family: "Montserrat", sans-serif;
+        white-space: nowrap;
+        text-decoration: none !important;
+        border: 1px solid $cor_brand_a;
+        background-color: transparent;
+        color: $cor_brand_a;
+
+        &:hover {
+            background-color: $cor_brand_a;
+            color: $cor_background_a;
+        }
+    }
+}
