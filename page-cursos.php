@@ -96,6 +96,7 @@
                     <a class="botao botao__especial" onclick="toggleMatriz()"><i class="fa-solid fa-table-list" aria-label="button"></i>&nbsp; Conhecer Matriz Curricular</a>
                     <a href="https://wa.me/5527999280910" class="botao botao__secundario" target="_blank"><i class="fas fa-plus"></i>&nbsp; Obter mais informações</a>
                     <a href="<?php echo home_url("graduacao"); ?>" class="botao botao__secundario"><i class="fas fa-search"></i>&nbsp; Conhecer os outros cursos</a>
+                    <a href="<?php echo home_url("egressos"); ?>" class="botao botao__secundario"><i class="fa-solid fa-door-open"></i>&nbsp; Alunos egressos</a>
                 </div>
             </nav>
 
